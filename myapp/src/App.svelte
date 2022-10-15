@@ -3,27 +3,27 @@
 
   let name = "jonghwa";
   //let fruits = ["apple","pineapple","melon","mango"];
-  let snows = [...new Array(100)];
+  let snows = [...new Array(100).map(()=>{return 1;})];
   let snowClass = "b";
 
   const images = [
     {
-      src: "https://www.weather.go.kr/w/repositary/xml/fct/mid/img/FCT_WI1_11B10101_202210110600.png",
+      src: "https://www.weather.go.kr/w/repositary/xml/fct/mid/img/FCT_WI1_11B10101_202210140600.png",
       width: 686,
       height: 296,
     },
     {
-      src: "https://www.weather.go.kr/w/repositary/xml/fct/mid/img/FCT_WI1_11B20201_202210110600.png",
+      src: "https://www.weather.go.kr/w/repositary/xml/fct/mid/img/FCT_WI1_11B20201_202210140600.png",
       width: 686,
       height: 296,
     },
     {
-      src: "https://www.weather.go.kr/w/repositary/xml/fct/mid/img/FCT_WI1_11B20601_202210110600.png",
+      src: "https://www.weather.go.kr/w/repositary/xml/fct/mid/img/FCT_WI1_11B20601_202210140600.png",
       width: 686,
       height: 296,
     },
     {
-      src: "https://www.weather.go.kr/w/repositary/xml/fct/mid/img/FCT_WI1_11B20305_202210110600.png",
+      src: "https://www.weather.go.kr/w/repositary/xml/fct/mid/img/FCT_WI1_11B20305_202210140600.png",
       width: 686,
       height: 296,
     },
@@ -46,7 +46,7 @@
   <Gallery {images} />
 </div>
 
-<style lang="scss">
+<!--style lang="scss">
   @use 'sass:math';
   //@import "../style/app.scss";
   // 직접 sass/scss 코드를 입력해도 된다.
@@ -91,4 +91,4 @@
       top: 100%;
     }
   }
-</style>
+</style-->
