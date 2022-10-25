@@ -1,6 +1,9 @@
+
 <script>
-    let snows = [...new Array(100).map(()=>{return 1;})];
-  let snowClass = "b";
+
+  let snows = [...new Array(100).map(()=>{return 1;})];
+  let snowClass = "snowShow";
+
 
 </script>
 
@@ -11,7 +14,7 @@
 
 <button
   on:click={() => {
-    snowClass = snowClass == "b" ? "a" : "b";
+    snowClass = snowClass == "snowShow" ? "snowHide" : "snowShow";
   }}
 >
   Snow Off
@@ -24,7 +27,7 @@
     // 직접 sass/scss 코드를 입력해도 된다.
     $b: 100;
     
-    .b {
+    .snowShow {
       border-radius: 50%;
       float: left;
       margin-top: -50px;
