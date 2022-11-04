@@ -1,0 +1,3 @@
+[submodule "weather_bot"]
+	path = weather_bot
+	url = https://github.com/jellyruby/weather_bot
