@@ -7,6 +7,13 @@ const config = {
 
   plugins: [],
 
+  server: {
+    fs: {
+      // Allow serving files from one level up to the project root
+      allow: ['..','C:/Users/user/Pictures/']
+    }
+  }
+
 };
 
 module.exports = config;
