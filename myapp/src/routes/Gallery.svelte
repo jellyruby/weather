@@ -32,7 +32,7 @@
   ];
 
 </script>
-<div in:fade out:fade>
+<div class="routePage">
     <Gallery {images} />
 </div>
   

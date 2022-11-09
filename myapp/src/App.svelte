@@ -1,19 +1,44 @@
 <script>
-  import SnowEffect from "./components/SnowEffect.svelte";
   import Router from 'svelte-spa-router';
-  import Main from "./routes/Main.svelte";
-  import Detail from "./routes/Detail.svelte";
-  import WeathetGallery from "./routes/Gallery.svelte";
+
+  import Header from "./Header.svelte";  
+  import SnowEffect from "./components/SnowEffect.svelte";  
+
+  import { PageRouterInit } from "./components/Navigation";
+  import { fly } from 'svelte/transition';
+  
+
+  const PageRouter = PageRouterInit.reduce((acc,item) => {
+			acc[item.url] = item.pageComponent;
+			return acc;
+		},{});
+
+
+  window.onload = function(){
+
+    const element = document.querySelectorAll('routePage');
+
+    element.forEach(function(item,index){
+      item.addEventListener('mousewheel',function(){
+        
+      })
+    });
+
+  }  
+  
 
 </script>
 
+<Header />
 <SnowEffect />
 
-<Router routes={{
-  '/': Main,
-  '/Detail': Detail,
-  '/Gallery' : WeathetGallery
-}} />
+
+<Router routes={PageRouter} />
+
+
+
+
+
 
 
 

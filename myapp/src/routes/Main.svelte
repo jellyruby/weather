@@ -1,1 +1,1 @@
-<div>test2</div>
+<div class="routePage">test2</div>
