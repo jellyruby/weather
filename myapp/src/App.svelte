@@ -39,12 +39,14 @@
   
   import ImageCellList from "./components/MainList/ImageCellList.svelte";  
   
-  const srcList = [...new Array(4).fill(null).map((value,index)=>{return `/src/assets/img/${index+5}.avif`;})];
-  const srcList2 = [...new Array(5).fill(null).map((value,index)=>{return `/src/assets/img/${index+1}.avif`;})];
+  const srcList = [...new Array(4).fill(undefined).map((value,index)=>{return `/src/assets/img/${index+5}.avif`;})];
+
+
+  const srcList2 = [...new Array(5).map((value,index)=>{return `/src/assets/img/${index+1}.avif`;})];
 
 
   console.log([...new Array(4).fill(undefined)]);
-  console.log([...new Array(4)]);
+  
 
   console.log(srcList);  
   console.log(srcList2);
