@@ -37,19 +37,7 @@
 <script>
 
   import SnowEffect from "./components/SnowEffect.svelte";  
-  import ImageCellList from "./components/MainList/ImageCellList.svelte";  
-  
-  const srcList =  [
-    [...new Array(4).fill(undefined).map((value,index)=>{return `/src/assets/img/${index+5}.avif`;})],
-    [...new Array(5).fill(undefined).map((value,index)=>{return `/src/assets/img/${index+1}.avif`;})],
-    [...new Array(5).fill(undefined).map((value,index)=>{return `/src/assets/img/${index+10}.avif`;})],
-    [...new Array(3).fill(undefined).map((value,index)=>{return `/src/assets/img/${index+16}.avif`;})],
-    [...new Array(4).fill(undefined).map((value,index)=>{return `/src/assets/img/${index+19}.avif`;})],
-    [...new Array(5).fill(undefined).map((value,index)=>{return `/src/assets/img/${index+23}.avif`;})],
-    [...new Array(3).fill(undefined).map((value,index)=>{return `/src/assets/img/${index+28}.avif`;})]
-  ];
-  
-
+  import MainContent from "./components/MainList/Content.svelte";  
 
 </script>
 
@@ -70,54 +58,8 @@
 		<section class="intro">
 			<p>이곳은 인트로입니닷!</p>
 		</section>
-		<section class="content">
-			<div class="cover"></div>
-			<div class="row">
-				<div class="cell cell--text">
-					<h2 class="cell__title oh"><span class="oh__inner">열대성 저기압 감시</span></h2>
-				</div>
-       	<ImageCellList srcList={srcList[0]}/>
-			</div>
-			<div class="row">
-				<div class="cell cell--text">
-					<h2 class="cell__title oh"><span class="oh__inner">기후 감시</span></h2>
-				</div>
-       	<ImageCellList srcList={srcList[1]}/>
-			</div>
-            <div class="row">
-				<div class="cell cell--text">
-					<h2 class="cell__title oh"><span class="oh__inner">날씨 감시</span></h2>
-				</div>
-				<ImageCellList srcList={srcList[2]}/>
-			</div>
-			<div class="row">
-				<div class="cell cell--text">
-					<h2 class="cell__title oh"><span class="oh__inner">특이 기상 감지</span></h2>
-				</div>
-        <ImageCellList srcList={srcList[3]}/>
-				
-			</div>
-			<div class="row">
-				<div class="cell cell--text">
-					<h2 class="cell__title oh"><span class="oh__inner">계절 별 기상 분석</span></h2>
-				</div>
-				<ImageCellList srcList={srcList[4]}/>
-			</div>
-			<div class="row">
-				<div class="cell cell--text">
-					<h2 class="cell__title oh"><span class="oh__inner">해외 기상청 자료</span></h2>
-				</div>
-				<ImageCellList srcList={srcList[5]}/>
-			</div>
-			<div class="row">
-				<div class="cell cell--text">
-					<h2 class="cell__title oh"><span class="oh__inner">수치모델 자료</span></h2>
-				</div>
-        <ImageCellList srcList={srcList[6]}/>
-			</div>
-		</section><!-- /content -->
 
-
+		<MainContent/>
 
 		<section class="preview">
 			<button class="preview__close unbutton">&#9587;</button>
