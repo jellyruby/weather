@@ -36,20 +36,20 @@
 <Router routes={PageRouter} /-->
 <script>
 
-  
+  import SnowEffect from "./components/SnowEffect.svelte";  
   import ImageCellList from "./components/MainList/ImageCellList.svelte";  
   
-  const srcList = [...new Array(4).fill(undefined).map((value,index)=>{return `/src/assets/img/${index+5}.avif`;})];
-
-
-  const srcList2 = [...new Array(5).map((value,index)=>{return `/src/assets/img/${index+1}.avif`;})];
-
-
-  console.log([...new Array(4).fill(undefined)]);
+  const srcList =  [
+    [...new Array(4).fill(undefined).map((value,index)=>{return `/src/assets/img/${index+5}.avif`;})],
+    [...new Array(5).fill(undefined).map((value,index)=>{return `/src/assets/img/${index+1}.avif`;})],
+    [...new Array(5).fill(undefined).map((value,index)=>{return `/src/assets/img/${index+10}.avif`;})],
+    [...new Array(3).fill(undefined).map((value,index)=>{return `/src/assets/img/${index+16}.avif`;})],
+    [...new Array(4).fill(undefined).map((value,index)=>{return `/src/assets/img/${index+19}.avif`;})],
+    [...new Array(5).fill(undefined).map((value,index)=>{return `/src/assets/img/${index+23}.avif`;})],
+    [...new Array(3).fill(undefined).map((value,index)=>{return `/src/assets/img/${index+28}.avif`;})]
+  ];
   
 
-  console.log(srcList);  
-  console.log(srcList2);
 
 </script>
 
@@ -65,10 +65,10 @@
 					</svg>
 				</a>
 			</div>
-			<a class="frame__prevdemo hover-line" href="http://tympanus.net/Development/GlitchPerspective/">Previous demo</a>
+			<a class="frame__prevdemo hover-line" href="http://tympanus.net/Development/GlitchPerspective/">이곳은 타이틀입니닷!</a>
 		</div>
 		<section class="intro">
-			<p>나는 낭만 고양이</p>
+			<p>이곳은 인트로입니닷!</p>
 		</section>
 		<section class="content">
 			<div class="cover"></div>
@@ -76,123 +76,49 @@
 				<div class="cell cell--text">
 					<h2 class="cell__title oh"><span class="oh__inner">열대성 저기압 감시</span></h2>
 				</div>
-        <ImageCellList srcList={srcList}/>
-
+       	<ImageCellList srcList={srcList[0]}/>
 			</div>
 			<div class="row">
 				<div class="cell cell--text">
 					<h2 class="cell__title oh"><span class="oh__inner">기후 감시</span></h2>
 				</div>
-        <ImageCellList srcList={srcList2}/>
+       	<ImageCellList srcList={srcList[1]}/>
 			</div>
             <div class="row">
 				<div class="cell cell--text">
 					<h2 class="cell__title oh"><span class="oh__inner">날씨 감시</span></h2>
 				</div>
-				<div class="cell cell--images">
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/10.avif)"></div>
-					</div>
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/11.avif)"></div>
-					</div>
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/12.avif)"></div>
-					</div>
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/13.avif)"></div>
-					</div>
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/14.avif)"></div>
-					</div>
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/15.avif)"></div>
-					</div>
-				</div>
+				<ImageCellList srcList={srcList[2]}/>
 			</div>
 			<div class="row">
 				<div class="cell cell--text">
 					<h2 class="cell__title oh"><span class="oh__inner">특이 기상 감지</span></h2>
 				</div>
-				<div class="cell cell--images">
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/16.avif)"></div>
-					</div>
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/17.avif)"></div>
-					</div>
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/18.avif)"></div>
-					</div>
-				</div>
+        <ImageCellList srcList={srcList[3]}/>
+				
 			</div>
 			<div class="row">
 				<div class="cell cell--text">
 					<h2 class="cell__title oh"><span class="oh__inner">계절 별 기상 분석</span></h2>
 				</div>
-				<div class="cell cell--images">
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/19.avif)"></div>
-					</div>
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/20.avif)"></div>
-					</div>
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/21.avif)"></div>
-					</div>
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/22.avif)"></div>
-					</div>
-				</div>
+				<ImageCellList srcList={srcList[4]}/>
 			</div>
 			<div class="row">
 				<div class="cell cell--text">
 					<h2 class="cell__title oh"><span class="oh__inner">해외 기상청 자료</span></h2>
 				</div>
-				<div class="cell cell--images">
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/23.avif)"></div>
-					</div>
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/24.avif)"></div>
-					</div>
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/25.avif)"></div>
-					</div>
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/26.avif)"></div>
-					</div>
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/27.avif)"></div>
-					</div>
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/28.avif)"></div>
-					</div>
-				</div>
+				<ImageCellList srcList={srcList[5]}/>
 			</div>
 			<div class="row">
 				<div class="cell cell--text">
 					<h2 class="cell__title oh"><span class="oh__inner">수치모델 자료</span></h2>
 				</div>
-				<div class="cell cell--images">
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/29.avif)"></div>
-					</div>
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/30.avif)"></div>
-					</div>
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/1.avif)"></div>
-					</div>
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/10.avif)"></div>
-					</div>
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/12.avif)"></div>
-					</div>
-				</div>
+        <ImageCellList srcList={srcList[6]}/>
 			</div>
 		</section><!-- /content -->
+
+
+
 		<section class="preview">
 			<button class="preview__close unbutton">&#9587;</button>
 			<div class="preview__item">
