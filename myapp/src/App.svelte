@@ -1,43 +1,9 @@
-<!--script>
-  import Router from 'svelte-spa-router';
 
-  import Header from "./Header.svelte";  
-  import SnowEffect from "./components/SnowEffect.svelte";  
-
-  import { PageRouterInit } from "./components/Navigation";
-  import { fly } from 'svelte/transition';
-  
-
-  const PageRouter = PageRouterInit.reduce((acc,item) => {
-			acc[item.url] = item.pageComponent;
-			return acc;
-		},{});
-
-
-  window.onload = function(){
-
-    const element = document.querySelectorAll('routePage');
-
-    element.forEach(function(item,index){
-      item.addEventListener('mousewheel',function(){
-        
-      })
-    });
-
-  }  
-  
-
-</script>
-
-<Header />
-<SnowEffect />
-
-
-<Router routes={PageRouter} /-->
 <script>
 
   import SnowEffect from "./components/SnowEffect.svelte";  
-  import MainContent from "./components/MainList/Content.svelte";  
+  import MainContent from "./components/Main/Content.svelte";  
+  
 
 </script>
 
@@ -60,114 +26,8 @@
 		</section>
 
 		<MainContent/>
+		
 
-		<section class="preview">
-			<button class="preview__close unbutton">&#9587;</button>
-			<div class="preview__item">
-				<h2 class="preview__item-title oh"><span class="oh__inner">Nobody's Love</span></h2>
-				<div class="grid">
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/27.avif)"></div>
-					</div>
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/26.avif)"></div>
-					</div>
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/25.avif)"></div>
-					</div>
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/24.avif)"></div>
-					</div>
-				</div>
-			</div>
-            <div class="preview__item">
-				<h2 class="preview__item-title oh"><span class="oh__inner">Good Wings</span></h2>
-				<div class="grid">
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/30.avif)"></div>
-					</div>
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/29.avif)"></div>
-					</div>
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/28.avif)"></div>
-					</div>
-				</div>
-			</div>
-			<div class="preview__item">
-				<h2 class="preview__item-title oh"><span class="oh__inner">Maniac Fly</span></h2>
-				<div class="grid">
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/22.avif)"></div>
-					</div>
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/21.avif)"></div>
-					</div>
-				</div>
-			</div>
-			<div class="preview__item">
-				<h2 class="preview__item-title oh"><span class="oh__inner">Crumble Toe</span></h2>
-				<div class="grid">
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/20.avif)"></div>
-					</div>
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/19.avif)"></div>
-					</div>
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/30.avif)"></div>
-					</div>
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/31.avif)"></div>
-					</div>
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/2.avif)"></div>
-					</div>
-				</div>
-			</div>
-			<div class="preview__item">
-				<h2 class="preview__item-title oh"><span class="oh__inner">Finger Wax</span></h2>
-				<div class="grid">
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/15.avif)"></div>
-					</div>
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/14.avif)"></div>
-					</div>
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/13.avif)"></div>
-					</div>
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/12.avif)"></div>
-					</div>
-				</div>
-			</div>
-			<div class="preview__item">
-				<h2 class="preview__item-title oh"><span class="oh__inner">Haunted X</span></h2>
-				<div class="grid">
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/11.avif)"></div>
-					</div>
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/10.avif)"></div>
-					</div>
-				</div>
-			</div>
-			<div class="preview__item">
-				<h2 class="preview__item-title oh"><span class="oh__inner">Next Horror</span></h2>
-				<div class="grid">
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/6.avif)"></div>
-					</div>
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/8.avif)"></div>
-					</div>
-					<div class="cell__img">
-						<div class="cell__img-inner" style="background-image:url(/src/assets/img/5.avif)"></div>
-					</div>
-				</div>
-			</div>
-		</section>
 		<footer class="page-footer">
 			<p class="page-footer__text">What alacrity around one and the same dropping! Never did adventurers hurrying from the four corners of the earth display such eagerness in working a Californian claim.</p>
 			<p class="page-footer__text">Before the sun becomes too hot, they are there in their hundreds, large and small, promiscuously, of every sort, shape and size, hastening to carve themselves a slice of the common cake. There are some that work in the open air and scrape the surface; there are some that dig themselves galleries in the thick of the heap, in search of choice veins; others work the lower stratum and bury their spoil without delay in the underlying ground; others—the smallest—stand aside to crumble a morsel that has fallen from the mighty excavations of their more powerful fellow-workers. Some, the newcomers and, no doubt, the hungriest, consume their meal on the spot; but the greater number mean to put by a substance that will allow them to spend long days in plenty, down in some safe retreat. A nice, fresh dropping is not found just when you want it, amid the fields bare of thyme; a windfall of that sort is as manna from the sky; only fortune’s favourites receive so fair a portion. Wherefore the riches of to-day are prudently stored for the morrow.</p>

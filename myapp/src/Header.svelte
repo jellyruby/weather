@@ -1,8 +1,6 @@
 
 <script>
 	import { PageRouterInit } from "./components/Navigation";
-	
-  import { each } from 'svelte/internal';
 
 
 
