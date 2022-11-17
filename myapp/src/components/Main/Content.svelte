@@ -1,5 +1,6 @@
 <script>
   import ImageCellList from "./ImageCellList.svelte";  
+  import ImageCell from "./ImageCell.svelte";  
   
   const srcList =  [
     {
@@ -50,4 +51,4 @@
 		{/each}
 
 
-</section><!-- /content -->
+</section>
