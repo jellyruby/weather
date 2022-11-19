@@ -1,29 +1,33 @@
 
+<script>
+	import ImageCellList from "./ImageCellList.svelte";  
+	import ImageCell from "./ImageCell.svelte";  
+
+</script>
+
+
+
 
 <section class="preview">
 	<button class="preview__close unbutton">&#9587;</button>
 	<div class="preview__item">
-		<h2 class="preview__item-title oh"><span class="oh__inner">Nobody's Love</span></h2>
+		<h2 class="preview__item-title oh"><span class="oh__inner">현재 진행중인 열대성 저기압</span></h2>
 		<div class="grid">
 
-			<ImageCell src="/src/assets/img/27.avif"/>
+			<!--ImageCell src="/src/assets/img/27.avif"/>
 			<ImageCell src="/src/assets/img/26.avif"/>
 			<ImageCell src="/src/assets/img/25.avif"/>
-			<ImageCell src="/src/assets/img/24.avif"/>
+			<ImageCell src="/src/assets/img/24.avif"/-->
 		</div>
 	</div>
 	<div class="preview__item">
 		<h2 class="preview__item-title oh"><span class="oh__inner">Good Wings</span></h2>
 		<div class="grid">
-			<div class="cell__img">
-				<div class="cell__img-inner" style="background-image:url(/src/assets/img/30.avif)"></div>
-			</div>
-			<div class="cell__img">
-				<div class="cell__img-inner" style="background-image:url(/src/assets/img/29.avif)"></div>
-			</div>
-			<div class="cell__img">
-				<div class="cell__img-inner" style="background-image:url(/src/assets/img/28.avif)"></div>
-			</div>
+
+			<ImageCell src="/src/assets/img/30.avif"/>
+			<ImageCell src="/src/assets/img/29.avif"/>
+			<ImageCell src="/src/assets/img/28.avif"/>
+			<ImageCell src="/src/assets/img/27.avif"/>
 		</div>
 	</div>
 	<div class="preview__item">

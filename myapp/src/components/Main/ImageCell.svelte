@@ -1,10 +1,12 @@
 <script>
 
     export let src;
+    export let name;
 
 </script>
 
 
 <div class="cell__img">
-    <div class="cell__img-inner" style="background-image:url({src})"></div>
+    <div>{name}</div>
+    <div id="{name}" class="cell__img-inner" style="background-image:url({src})"></div>
 </div>
