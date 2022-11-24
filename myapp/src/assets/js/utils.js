@@ -18,7 +18,7 @@ const preloadImages = (selector = 'img') => {
     return new Promise((resolve) => {
         WebFont.load({
             google: {
-                families: ['Poor Story']
+                families: ['Dongle']
               }
             /*typekit: {
                 id: id
