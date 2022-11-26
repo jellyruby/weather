@@ -5,7 +5,9 @@ const config = {
     extend: {},
   },
 
-  plugins: [],
+  plugins: [
+    imn('@tailwindcss/typography'),
+  ],
 
   server: {
     fs: {
