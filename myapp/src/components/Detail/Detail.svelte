@@ -2,6 +2,8 @@
 
     import ProductShow from "../ProductShow.svelte"
 
+    import {querystring} from "svelte-spa-router"
+
     const crawlingCyloneData = [
         {
             "title":"Tropical Depression 94S",

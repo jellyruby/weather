@@ -10,6 +10,8 @@
 
     });
 
+    
+
 </script>
 
 <div class="cell cell--images">
