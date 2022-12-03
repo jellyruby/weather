@@ -8,5 +8,5 @@
 
 <div class="cell__img">
     <div>{name}</div>
-    <div id="{name}" class="cell__img-inner" style="background-image:url({src})"></div>
+    <div id="{name}" class="cell__img-inner" style="background-image:url({src})" data-url={name}></div>
 </div>
