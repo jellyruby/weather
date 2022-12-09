@@ -27,6 +27,16 @@ const images = [
 
   import MainContent from "../components/Main/Content.svelte";  
   import PreviewContent from "../components/Main/Preview.svelte";   
+	import {gsapStart} from "../assets/js/index.js";
+	import { onMount } from "svelte";
+
+
+	onMount(() => {
+
+		gsapStart();
+
+	});
+
 
 </script>
 
