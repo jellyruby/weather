@@ -19,6 +19,8 @@
 	--image-gap-large: 2vw;
 	--img-size: 5vw;
 	--img-size-large: 14vw;
+	--text-size: 15vw;
+	--text-size-large: 30vw;
 }
 
 body {
@@ -391,6 +393,25 @@ a:focus-visible {
 	grid-template-columns: repeat(4,var(--img-size));
 	grid-template-rows: repeat(2,var(--img-size));
 }
+
+.grid_detail {
+	position: relative;
+	display: grid;
+	max-width: 1800px;
+	width: 100%;
+    grid-gap: var(--image-gap-large);
+	justify-content: center;
+	justify-items: center;
+	--img-size: var(--text-size-large);
+	grid-template-columns: repeat(4,var(--text-size));
+	grid-template-rows: repeat(2,var(--text-size));
+}
+
+.grid_detail .cell__img {
+	width: var(--text-size);
+	opacity : 1;
+}
+
 
 .grid .cell__img {
 	width: var(--img-size-large);

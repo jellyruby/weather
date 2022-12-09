@@ -6,8 +6,6 @@
 
     const srcParma = srcList.image.map((vlaue,index)=>{
 
-        
-
         return {image : srcList.image[index], name : srcList.name[index], }
 
     });
@@ -16,6 +14,6 @@
 
 <div class="cell cell--images">
     {#each srcParma as src}
-        <ImageCell src={src.image} name={src.name}/>
+        <ImageCell src={src.image} name={src.name??'test'}/>
     {/each}
 </div>

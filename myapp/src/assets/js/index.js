@@ -2,6 +2,9 @@ import { preloadImages, preloadFonts } from './utils';
 import { Row } from './row';
 import { gsap } from 'gsap';
 import { Flip } from 'gsap/Flip';
+
+
+
 gsap.registerPlugin(Flip);
 
 // preview Items
@@ -187,7 +190,7 @@ for (const row of rowsArr) {
 }
 
 // Close the grid and show back the rows
-closeCtrl.addEventListener('click', () => {
+closeCtrl?.addEventListener('click', () => {
     if ( isAnimating ) return;
     isAnimating = true;
 
