@@ -2,7 +2,9 @@
   import ImageCellList from "./ImageCellList.svelte";  
   import ImageCell from "./ImageCell.svelte";  
 
-	
+  async function getData() {
+        // Make the API Call here
+    }	
 
 	//#todo. 추후 크롤링한 데이터를 DB화 하여, api 에서 주는 값으로 출력한다.
 
