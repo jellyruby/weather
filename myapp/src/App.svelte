@@ -9,9 +9,4 @@
 
 
 <Main/>
-<Router routes={{
-	'/': Main,
-	'/Detail': Detail,
-  }} />
-  
 

@@ -251,6 +251,7 @@ export function gsapStart() {
             onComplete: () => {
                 //row.DOM.el.classList.remove('row--current');
                 //row.previewItem.DOM.el.classList.remove('preview__item--current');
+                refreshCtrl.classList.remove('preview__close--show')
                 isAnimating = false;
             }
         })
