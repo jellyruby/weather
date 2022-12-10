@@ -45,7 +45,7 @@ const images = [
   <main>
 		<div class="frame">
 			<div class="frame__title">
-				<h1 class="frame__title-main"> 먀옹 </h1>
+				<h1 class="frame__title-main"> github </h1>
 				<a aria-label="Back to the article" class="frame__title-back" href="https://github.com/jellyruby/weather">
 					<span class="oh__inner">Back to the article</span>
 					<svg width="21px" height="21px" viewBox="0 0 24 24">
