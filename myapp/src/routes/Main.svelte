@@ -27,23 +27,16 @@ const images = [
 
   import MainContent from "../components/Main/Content.svelte";  
   import PreviewContent from "../components/Main/Preview.svelte";   
-  
-  document.addEventListener("DOMContentLoaded", function(){
+	import {gsapStart} from "../assets/js/index.js";
+	import { onMount } from "svelte";
 
-	document.querySelectorAll('.cell__img-inner').forEach(obj => {
-			obj.addEventListener('click', () => {
-				if (obj instanceof HTMLElement) {
-					//document.querySelectorAll('.preview > .preview__close').forEach(el=>el.click());
-					document.querySelector('.preview__item--current').closest('.preview ').querySelector('.preview__close').click();
-					location.href = '#/detail?' + 'name=' + obj.dataset.name ;					
-				}
-			})
-		})
 
+	onMount(() => {
+
+		gsapStart();
 
 	});
-	
-	
+
 
 </script>
 

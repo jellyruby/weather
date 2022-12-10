@@ -2,7 +2,7 @@
 <script>
 	import ImageCellList from "./ImageCellList.svelte";  
 	import ImageCell from "./ImageCell.svelte";  
-
+	import DetailContent from "../../components/Detail/Detail.svelte";   
 </script>
 
 
@@ -10,6 +10,8 @@
 
 <section class="preview">
 	<button class="preview__close unbutton">&#9587;</button>
+	<button class="preview__refresh unbutton">&#10227;</button>
+	<DetailContent/>
 	<div class="preview__item">
 		<h2 class="preview__item-title oh"><span class="oh__inner">현재 진행중인 열대성 저기압</span></h2>
 		<div class="grid">
