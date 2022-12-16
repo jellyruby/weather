@@ -26,7 +26,7 @@
 		</div>
 	</div>
 	<div class="preview__item">
-		<h2 class="preview__item-title oh"><span class="oh__inner">Good Wings</span></h2>
+		<h2 class="preview__item-title oh"><span class="oh__inner">기후 감시 요소</span></h2>
 		<div class="grid">
 
 			<!-- <ImageCell src="/src/assets/img/30.avif"/>
@@ -36,7 +36,7 @@
 		</div>
 	</div>
 	<div class="preview__item">
-		<h2 class="preview__item-title oh"><span class="oh__inner">Maniac Fly</span></h2>
+		<h2 class="preview__item-title oh"><span class="oh__inner">날씨 감시 요소</span></h2>
 		<div class="grid">
 			<!-- <div class="cell__img">
 				<div class="cell__img-inner" style="background-image:url(/src/assets/img/22.avif)"></div>
@@ -47,55 +47,25 @@
 		</div>
 	</div>
 	<div class="preview__item">
-		<h2 class="preview__item-title oh"><span class="oh__inner">Crumble Toe</span></h2>
+		<h2 class="preview__item-title oh"><span class="oh__inner">특이기상 감시</span></h2>
 		<div class="grid">
-			<!-- <div class="cell__img">
-				<div class="cell__img-inner" style="background-image:url(/src/assets/img/20.avif)"></div>
-			</div>
-			<div class="cell__img">
-				<div class="cell__img-inner" style="background-image:url(/src/assets/img/19.avif)"></div>
-			</div>
-			<div class="cell__img">
-				<div class="cell__img-inner" style="background-image:url(/src/assets/img/30.avif)"></div>
-			</div>
-			<div class="cell__img">
-				<div class="cell__img-inner" style="background-image:url(/src/assets/img/31.avif)"></div>
-			</div>
-			<div class="cell__img">
-				<div class="cell__img-inner" style="background-image:url(/src/assets/img/2.avif)"></div>
-			</div> -->
+
 		</div>
 	</div>
 	<div class="preview__item">
-		<h2 class="preview__item-title oh"><span class="oh__inner">Finger Wax</span></h2>
+		<h2 class="preview__item-title oh"><span class="oh__inner">계절 별 기상 분석</span></h2>
 		<div class="grid">
-			<!-- <div class="cell__img">
-				<div class="cell__img-inner" style="background-image:url(/src/assets/img/15.avif)"></div>
-			</div>
-			<div class="cell__img">
-				<div class="cell__img-inner" style="background-image:url(/src/assets/img/14.avif)"></div>
-			</div>
-			<div class="cell__img">
-				<div class="cell__img-inner" style="background-image:url(/src/assets/img/13.avif)"></div>
-			</div>
-			<div class="cell__img">
-				<div class="cell__img-inner" style="background-image:url(/src/assets/img/12.avif)"></div>
-			</div> -->
+
 		</div>
 	</div>
 	<div class="preview__item">
-		<h2 class="preview__item-title oh"><span class="oh__inner">Haunted X</span></h2>
+		<h2 class="preview__item-title oh"><span class="oh__inner">해외 기상청 자료</span></h2>
 		<div class="grid">
-			<!-- <div class="cell__img">
-				<div class="cell__img-inner" style="background-image:url(/src/assets/img/11.avif)"></div>
-			</div>
-			<div class="cell__img">
-				<div class="cell__img-inner" style="background-image:url(/src/assets/img/10.avif)"></div>
-			</div> -->
+
 		</div>
 	</div>
 	<div class="preview__item">
-		<h2 class="preview__item-title oh"><span class="oh__inner">Next Horror</span></h2>
+		<h2 class="preview__item-title oh"><span class="oh__inner">수치모델 자료</span></h2>
 		<div class="grid">
 			<!-- <div class="cell__img">
 				<div class="cell__img-inner" style="background-image:url(/src/assets/img/6.avif)"></div>
