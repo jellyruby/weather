@@ -1,7 +1,5 @@
 <script >
 
-    //$: console.log('the count is ' + count);
-
     export let detailKey = 0;
 
     const crawlingCyloneData = [
